@@ -1,1 +1,66 @@
 @import url(variables.css);
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header-bg {
+  background-color: var(--cor12);
+}
+
+.header-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 20px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* olhar aula 1004 header e menu, não fazer o media de lá e sim o mobile first */
+.header-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.header-menu a {
+  color: var(--cor0);
+  display: inline-block;
+  padding: 16px 0;
+  font-size: 1.125rem;
+  position: relative;
+  /* olhar aula 1004 header e menu, não fazer o media de lá e sim o mobile first */
+}
+
+.header-menu a:after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0%;
+  background: var(--cor0);
+  margin-top: 4px;
+  transition: 0.3s;
+  position: absolute;
+  /* olhar aula 1004 header e menu, não fazer o media de lá e sim o mobile first */
+}
+
+.header-menu a:hover:after {
+  width: 100%;
+  /* olhar aula 1004 header e menu, não fazer o media de lá e sim o mobile first */
+}
