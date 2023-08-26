@@ -87,13 +87,3 @@ img {
   grid-template-columns: 1fr 1fr;
   gap: 0 40px;
 }
-
-.introducao p,
-.introducao a {
-  grid-column: 1;
-}
-
-.introducao img {
-  grid-column: 2;
-  grid-row: 1/3;
-}
