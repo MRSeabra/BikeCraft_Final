@@ -23,13 +23,10 @@
 }
 
 .header-menu a {
-  color: var(--cor0);
   display: inline-block;
   padding: 16px 0;
-  font-size: 1.125rem;
   position: relative;
-  font-family: "Poppins";
-  font-weight: 400;
+
   /* olhar aula 1004 header e menu, não fazer o media de lá e sim o mobile first */
 }
 
@@ -42,7 +39,7 @@
   margin-top: 4px;
   transition: 0.3s;
   position: absolute;
-  /* olhar aula 1004 header e menu, não fazer o media de lá e sim o mobile first */
+  /* olhar aula 1004 e 1011 header e menu, não fazer o media de lá e sim o mobile first */
 }
 
 .header-menu a:hover:after {
