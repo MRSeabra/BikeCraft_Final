@@ -1,0 +1,37 @@
+.parceiros {
+  padding-top: 60px;
+  padding-bottom: 120px;
+}
+
+.parceiros h2 {
+  margin-bottom: 60px;
+}
+
+.parceiros ul {
+  max-width: 1400px;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0 auto;
+}
+
+.parceiros li {
+  display: flex;
+  padding: 32px;
+  border-left: 2px solid var(--cor2);
+}
+
+.parceiros img {
+  margin: auto;
+}
+
+.parceiros li:first-child,
+.parceiros li:nth-child(5) {
+  border-left: none;
+}
+
+.parceiros li:nth-child(n + 5) {
+  border-top: 2px solid var(--cor2);
+}
+
+/* voltar na aula 1015 para responsivo, tentar o mobile first */
