@@ -16,12 +16,22 @@
   text-transform: uppercase;
   color: var(--p5);
   font: 600 1.125rem/1.33 "Poppins", sans-serif;
+  max-width: max-content;
 }
 
 .botao:hover {
   background: var(--gradiente2);
 }
 /* voltar na aula 1007 para responsivo e tentar fazer o mobile first */
+
+.botao.secundario {
+  background: var(--cor10);
+  color: var(--cor2);
+}
+
+.botao.secundario:hover {
+  background: var(--cor9);
+}
 
 .link {
   display: inline-block;
