@@ -51,3 +51,16 @@
 .link:hover {
   color: var(--cor0);
 }
+
+/* Títulos Internos */
+.titulo-bg {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--cor11);
+}
+
+.titulo p {
+  margin-bottom: 4px;
+}
+
+/* voltar na aula 1019 para responsivo */
