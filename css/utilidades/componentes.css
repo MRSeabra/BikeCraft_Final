@@ -50,6 +50,7 @@
 
 .link:hover {
   color: var(--cor0);
+  transition: 0.3s;
 }
 
 /* Títulos Internos */

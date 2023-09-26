@@ -1,0 +1,105 @@
+/* terceiro filho do pai herda a cor 11 */
+/* .bicicletas-bg:nth-child(3) {
+  background: var(--cor11);
+} */
+
+/* Nesse apenas os ímpares herdam a cor 11 */
+/* .bicicletas-bg:nth-child(odd) {
+  background: var(--cor11);
+} */
+
+/* Removendo as divs de bg desnecessárias deixando apenas as de containers */
+.bicicletas-bg {
+  background: var(--cor11);
+}
+
+.bicicletas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.bicicletas-img {
+  /* usando display grid */
+  display: grid;
+  /* usando position */
+  /* position: relative; */
+}
+
+.bicicletas-img img {
+  grid-area: 1/1;
+}
+
+.bicicletas-img span {
+  /* usando display grid */
+  grid-area: 1/1;
+  place-self: start end;
+  margin-top: 20px;
+  /* display block expande, inline-block impede que haja uma expansao de 100% do conteudo*/
+  display: inline-block;
+  background: var(--cor12);
+  padding: 8px 16px 8px 8px;
+  border-radius: 5px 0 0 5px;
+  /* usando position */
+  /* position: absolute;
+  top: 20px;
+  right: 0px; */
+}
+
+.bicicletas-conteudo {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-content: start;
+}
+
+.bicicletas h2,
+.bicicletas p {
+  grid-column: 1/-1;
+}
+
+.bicicletas h2 {
+  margin-bottom: 20px;
+}
+
+.bicicletas h2::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 8px;
+  background-color var(--p1);
+  margin-bottom: 8px;
+}
+
+.bicicletas p {
+    margin-bottom: 32px;
+  }
+
+.bicicletas a {
+place-self: end;
+}
+
+.bicicletas li {
+    display: flex;
+    align-items: center;
+    /* 1ª forma de fazer o distanciamento */
+    /* gap: 8px; */
+}
+
+/* .bicicletas ul {
+    distanciamento com grid
+    display: grid;
+    gap: 16px;
+} */
+
+.bicicletas li + li {
+    /* distanciamento com li+li */
+    margin-top: 16px;
+}
+
+.bicicletas-conteudo img {
+    width: 24px;
+    margin-right: 8px;
+}
+
