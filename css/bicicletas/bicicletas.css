@@ -10,7 +10,11 @@
 
 /* Removendo as divs de bg desnecessárias deixando apenas as de containers */
 .bicicletas-bg {
-  background: var(--cor11);
+  /* Detalho a partir do gradiente */
+  background-image: linear-gradient(to right, var(--cor0) 30%, var(--cor12) 0%);
+  /* background: var(--cor11); */
+  /* com box-shadow tem o problema dos 120px serem fixos e influenciarem de forma drastica dependendo do tamanho da tela, sombra não aceita porcentagem
+  box-shadow: inset 120px 0 white; */
 }
 
 .bicicletas {
@@ -68,23 +72,23 @@
   display: block;
   width: 12px;
   height: 8px;
-  background-color var(--p1);
+  background: var(--p1);
   margin-bottom: 8px;
 }
 
 .bicicletas p {
-    margin-bottom: 32px;
-  }
+  margin-bottom: 32px;
+}
 
 .bicicletas a {
-place-self: end;
+  place-self: end;
 }
 
 .bicicletas li {
-    display: flex;
-    align-items: center;
-    /* 1ª forma de fazer o distanciamento */
-    /* gap: 8px; */
+  display: flex;
+  align-items: center;
+  /* 1ª forma de fazer o distanciamento */
+  /* gap: 8px; */
 }
 
 /* .bicicletas ul {
@@ -94,12 +98,13 @@ place-self: end;
 } */
 
 .bicicletas li + li {
-    /* distanciamento com li+li */
-    margin-top: 16px;
+  /* distanciamento com li+li */
+  margin-top: 16px;
 }
 
 .bicicletas-conteudo img {
-    width: 24px;
-    margin-right: 8px;
+  width: 24px;
+  margin-right: 8px;
 }
 
+/* voltar na aula 1020 para fazer o responsivo */
