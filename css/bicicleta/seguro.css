@@ -1,0 +1,31 @@
+.seguro-bicicleta-bg {
+  background-color: var(--cor11);
+  box-shadow: inset 0 120px var(--cor0), inset 0 -120px var(--cor12);
+}
+
+.seguro-bicicleta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.seguro-bicicleta-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.seguro-bicicleta-conteudo {
+  padding-top: 180px;
+  padding-bottom: 180px;
+}
+
+.seguro-bicicleta h2 {
+  margin-bottom: 32px;
+}
+
+.seguro-bicicleta p {
+  margin-bottom: 20px;
+}
+
+/* voltar na aula 1024 para responsivo */

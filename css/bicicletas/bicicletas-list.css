@@ -7,6 +7,7 @@
   margin-bottom: 40px;
 }
 
+/* classe da ul la da parte de bicicletas da home */
 .bicicletas-list-itens {
   display: flex;
   gap: 40px;
@@ -15,6 +16,11 @@
   margin-left: auto;
   margin-right: auto;
   overflow-x: auto;
+}
+
+/* classe e id especifico para bicicleta interna */
+#bicicleta .bicicletas-list-itens {
+  padding: 0 0 20px 0;
 }
 
 .bicicletas-list a {
