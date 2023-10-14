@@ -25,8 +25,44 @@
   left: -12px;
 }
 
-.orcamento-produtos,
+.orcamento-produto,
 .orcamento-dados {
   padding: 60px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.orcamento-produto {
+  border-radius: 5px 0 0 5px;
+  background: var(--cor12);
+}
+
+.orcamento-dados {
+  border-radius: 0 5px 5px 0;
+  background: var(--cor0);
+}
+
+.orcamento-produto label {
+  background: #ccc;
+  padding: 20px;
+  display: inline-block;
+}
+
+.orcamento-conteudo {
+  padding: 20px;
+  background: #222;
+  margin: 20px 0;
+  display: none;
+}
+
+/* Formas de utilizar o css para esconder e escolher os itens sem precisar de js */
+
+/* Versão mais longa
+#bikcraft:checked + label + input + label + #orcamento-bikcraft {
+  background: blue;
+} */
+
+/* Simplificada, o til faz com que o código procure o 1ª elemento que contenha o id denominado de #orcamento-bikcraft apos a id #bikcraft, porém tem que estar no mesmo nível, uma div a mais ou a menos pode estragar o código (mesmo elemento pai) */
+#bikcraft:checked ~ #orcamento-bikcraft,
+#seguro:checked ~ #orcamento-seguro {
+  display: block;
 }
