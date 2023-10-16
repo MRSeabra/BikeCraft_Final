@@ -34,24 +34,60 @@
 .orcamento-produto {
   border-radius: 5px 0 0 5px;
   background: var(--cor12);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-content: start;
+}
+
+.orcamento-produto > * {
+  grid-column: 1/-1;
+}
+
+.orcamento-produto label {
+  font: 600 1rem/1.5 "Poppins", sans-serif;
+  color: var(--cor4);
+  background-color: var(--cor10);
+  display: block;
+  padding: 14px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.orcamento-produto input:checked + label {
+  background: var(--cor0);
+  color: var(--cor11);
+}
+
+.orcamento-produto label::before {
+  content: "";
+  display: inline-block;
+  box-sizing: border-box;
+  width: 12px;
+  height: 12px;
+  border: 1px solid var(--cor6);
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.orcamento-produto input:checked + label::before {
+  border-color: var(--cor7);
+  box-shadow: inset 0 0 0 2px var(--cor0), inset 0 0 0 5px var(--cor7);
+}
+
+.orcamento-produto input {
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.orcamento-produto > label {
+  grid-column: initial;
 }
 
 .orcamento-dados {
   border-radius: 0 5px 5px 0;
   background: var(--cor0);
-}
-
-.orcamento-produto label {
-  background: #ccc;
-  padding: 20px;
-  display: inline-block;
-}
-
-.orcamento-conteudo {
-  padding: 20px;
-  background: #222;
-  margin: 20px 0;
-  display: none;
 }
 
 /* Formas de utilizar o css para esconder e escolher os itens sem precisar de js */
