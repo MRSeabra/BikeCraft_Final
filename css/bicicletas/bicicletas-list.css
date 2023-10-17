@@ -1,3 +1,7 @@
+.bicicletas {
+  background: url(../../img/dec/top-right.svg) no-repeat top 40px right 40px;
+}
+
 .bicicletas-list {
   padding-top: 60px;
   padding-bottom: 120px;

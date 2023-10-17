@@ -15,12 +15,14 @@
 
 .contato-dados {
   border-radius: 5px 0 0 5px;
-  background: var(--cor12);
+  background: var(--cor12) url(../../img/dec/bottom-left.svg) no-repeat bottom
+    40px left 40px;
 }
 
 .contato-formulario {
   border-radius: 0 5px 5px 0;
-  background: var(--cor0);
+  background: var(--cor0) url(../../img/dec/bottom-right.svg) no-repeat bottom
+    40px right 40px;
 }
 
 .contato-dados h2 {
@@ -66,6 +68,11 @@
   display: flex;
   gap: 32px;
   padding-left: 28px;
+  transition: all 0.3s ease-in-out;
 }
 
-/* voltar na aula 1025 para responsivo */
+.contato-redes a:hover {
+  transform: scale(1.2);
+}
+
+/* voltar na aula 1025 e 1029 para responsivo */

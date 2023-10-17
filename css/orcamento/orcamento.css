@@ -33,7 +33,8 @@
 
 .orcamento-produto {
   border-radius: 5px 0 0 5px;
-  background: var(--cor12);
+  background: var(--cor12) url(../../img/dec/bottom-left.svg) no-repeat bottom
+    40px left 40px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
@@ -108,7 +109,8 @@
 
 .orcamento-dados {
   border-radius: 0 5px 5px 0;
-  background: var(--cor0);
+  background: var(--cor0) url(../../img/dec/bottom-right.svg) no-repeat bottom
+    40px right 40px;
 }
 
 .orcamento-conteudo {
@@ -160,4 +162,4 @@
   display: grid;
 }
 
-/* voltar na aula 1028 para responsivo, fazer diferente de como esta la */
+/* voltar na aula 1028 e 1029 para responsivo, fazer diferente de como esta la */
