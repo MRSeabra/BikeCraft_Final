@@ -162,4 +162,32 @@
   display: grid;
 }
 
-/* voltar na aula 1028 e 1029 para responsivo, fazer diferente de como esta la */
+/* voltar na aula 1029 para responsivo, fazer diferente de como esta la */
+/* Responsivo */
+@media (max-width: 1200px) {
+  .orcamento-produto,
+  .orcamento-dados {
+    padding: 32px;
+  }
+}
+
+@media (max-width: 800px) {
+  .orcamento {
+    grid-template-columns: 1fr;
+  }
+
+  .orcamento-produto {
+    border-radius: 5px 5px 0 0;
+    background: var(--cor12);
+  }
+
+  .orcamento-dados {
+    border-radius: 0 0 5px 5px;
+  }
+}
+
+@media (max-width: 800px) {
+  .orcamento-produto {
+    grid-template-columns: 1fr;
+  }
+}

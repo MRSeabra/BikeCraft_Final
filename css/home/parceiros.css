@@ -35,3 +35,29 @@
 }
 
 /* voltar na aula 1015 para responsivo, tentar o mobile first */
+
+@media (max-width: 800px) {
+  .parceiros {
+    padding-bottom: 60px;
+  }
+
+  .parceiros li {
+    padding: 20px;
+  }
+
+  .parceiros h2 {
+    margin-bottom: 20px;
+  }
+
+  .parceiros ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .parceiros li:nth-child(n + 3) {
+    border-top: 2px solid var(--cor2);
+  }
+
+  .parceiros li:nth-child(odd) {
+    border-left: none;
+  }
+}

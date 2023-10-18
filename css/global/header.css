@@ -12,7 +12,6 @@
   padding-bottom: 20px;
 }
 
-/* olhar aula 1004 header e menu, não fazer o media de lá e sim o mobile first */
 .header-menu {
   display: flex;
   flex-wrap: wrap;
@@ -23,8 +22,6 @@
   display: inline-block;
   padding: 16px 0;
   position: relative;
-
-  /* olhar aula 1004 header e menu, não fazer o media de lá e sim o mobile first */
 }
 
 .header-menu a:after {
@@ -36,10 +33,40 @@
   margin-top: 4px;
   transition: 0.3s;
   position: absolute;
-  /* olhar aula 1004 e 1011 header e menu, não fazer o media de lá e sim o mobile first */
 }
 
 .header-menu a:hover:after {
   width: 100%;
-  /* olhar aula 1004 header e menu, não fazer o media de lá e sim o mobile first */
+}
+
+/* Responsivo */
+@media (max-width: 800px) {
+  .header-menu {
+    gap: 20px;
+  }
+
+  .header-menu a {
+    background: var(--cor11);
+    padding: 12px 16px;
+    border-radius: 4px;
+  }
+
+  .header-menu a:hover {
+    background-color: var(--cor10);
+  }
+
+  .header-menu a::after {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-menu {
+    gap: 12px;
+  }
+
+  .header-menu a {
+    padding: 8px 12px;
+    font-size: 0.875rem;
+  }
 }

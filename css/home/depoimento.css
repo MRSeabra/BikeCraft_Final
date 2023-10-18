@@ -47,10 +47,26 @@
   bottom: -42px;
 }
 
-/* voltar na aula 1016 para responsivo, tentar o mobile first */
-
+/* Responsivo */
 @media (min-width: 1200px) {
   .depoimento img {
     max-width: 520px;
+  }
+}
+
+@media (max-width: 800px) {
+  .depoimento {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .depoimento img {
+    max-height: 300px;
+    max-width: 100%;
+  }
+
+  .depoimento-conteudo {
+    padding: 40px 20px;
+    justify-self: center;
   }
 }

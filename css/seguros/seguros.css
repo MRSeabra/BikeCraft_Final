@@ -67,4 +67,9 @@
   margin-bottom: 32px;
 }
 
-/* voltar na aula 1017 para responsivo */
+/* Responsivo */
+@media (max-width: 1200px) {
+  .seguro {
+    grid-template-columns: 1fr;
+  }
+}

@@ -24,7 +24,6 @@
 .botao:hover {
   background: var(--gradiente2);
 }
-/* voltar na aula 1007 para responsivo e tentar fazer o mobile first */
 
 .botao.secundario {
   background: var(--cor10);
@@ -89,4 +88,21 @@
   margin-bottom: 4px;
 }
 
-/* voltar na aula 1019 para responsivo */
+/* Responsivo */
+@media (max-width: 600px) {
+  .botao {
+    padding: 12px 16px;
+    font-size: 1rem;
+  }
+
+  .titulo-bg {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .titulo p {
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: lowercase;
+  }
+}

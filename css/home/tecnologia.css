@@ -51,4 +51,37 @@
   width: 24px;
   margin-bottom: 8px;
 }
-/* voltar na aula 1014 para responsivo */
+
+/* Responsivo */
+@media (max-width: 800px) {
+  .tecnologia-bg {
+    box-shadow: initial;
+  }
+
+  .tecnologia {
+    grid-template-columns: 1fr;
+  }
+
+  .tecnologia-conteudo {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .tecnologia-imagem {
+    display: none;
+  }
+
+  .tecnologia a {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .tecnologia-bg {
+    box-shadow: initial;
+  }
+
+  .tecnologia-vantagens {
+    flex-direction: column;
+  }
+}

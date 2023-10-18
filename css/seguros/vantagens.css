@@ -23,4 +23,18 @@
   margin-bottom: 8px;
 }
 
-/* voltar na aula 1021 para responsivo */
+/* Responsivo */
+@media (max-width: 800px) {
+  .vantagens {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .vantagens h2 {
+    margin-bottom: 40px;
+  }
+
+  .vantagens ul {
+    gap: 20px;
+  }
+}

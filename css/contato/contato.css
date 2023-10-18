@@ -75,4 +75,33 @@
   transform: scale(1.2);
 }
 
-/* voltar na aula 1025 e 1029 para responsivo */
+/* Responsivo */
+@media (max-width: 800px) {
+  .contato {
+    grid-template-columns: 1fr;
+  }
+
+  .contato-dados,
+  .contato-formulario {
+    padding: 20px;
+  }
+
+  .contato-dados {
+    border-radius: 5px 5px 0 0;
+    background: var(--cor12);
+  }
+
+  .contato-formulario {
+    border-radius: 0 0 5px 5px;
+  }
+
+  .contato-dados h2,
+  .contato-meios a:nth-child(3) {
+    margin-bottom: 32px;
+  }
+
+  .contato-redes,
+  .contato-meios a:nth-child(2) {
+    margin-bottom: 12px;
+  }
+}

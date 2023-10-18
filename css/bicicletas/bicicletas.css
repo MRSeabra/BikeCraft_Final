@@ -10,8 +10,8 @@
 
 /* Removendo as divs de bg desnecessárias deixando apenas as de containers */
 .bicicletas-bg {
-  /* Detalho a partir do gradiente */
-  background-image: linear-gradient(to right, var(--cor0) 30%, var(--cor12) 0%);
+  /* Detalhe a partir do gradiente */
+  background-image: linear-gradient(to right, var(--cor0) 30%, var(--cor11) 0%);
   /* background: var(--cor11); */
   /* com box-shadow tem o problema dos 120px serem fixos e influenciarem de forma drastica dependendo do tamanho da tela, sombra não aceita porcentagem
   box-shadow: inset 120px 0 white; */
@@ -107,4 +107,28 @@
   margin-right: 8px;
 }
 
-/* voltar na aula 1020 para fazer o responsivo */
+/* Responsivo */
+@media (max-width: 800px) {
+  .bicicletas-bg {
+    background: var(--cor11);
+  }
+
+  .bicicletas {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .bicicletas-conteudo ul {
+    margin-bottom: 32px;
+    font-size: 1rem;
+  }
+
+  .bicicletas a {
+    place-self: start;
+    grid-row: 5;
+  }
+}

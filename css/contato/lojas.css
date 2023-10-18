@@ -46,4 +46,25 @@
   gap: 8px;
 }
 
-/* Voltar na aula 1027 para responsivo, fazer diferente do que esta ali */
+/* Responsivo */
+@media (max-width: 800px) {
+  .lojas {
+    gap: 20px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .lojas h2 {
+    margin-bottom: 32px;
+  }
+
+  .lojas-conteudo {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .lojas {
+    grid-template-columns: 1fr;
+  }
+}

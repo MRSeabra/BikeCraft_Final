@@ -22,6 +22,10 @@
   overflow-x: auto;
 }
 
+.bicicletas-list li {
+  min-width: 280px;
+}
+
 /* classe e id especifico para bicicleta interna */
 #bicicleta .bicicletas-list-itens {
   padding: 0 0 20px 0;
@@ -59,4 +63,13 @@
   padding-left: 20px;
 }
 
-/* voltar na aula 1012 para responsivo, tentar fazer o mobile first */
+/* Responsivo */
+@media (max-width: 800px) {
+  .bicicletas-list {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .bicicletas-list-itens {
+    gap: 20px;
+  }
+}
