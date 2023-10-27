@@ -13,6 +13,8 @@
 
     <link rel="preload" href="./css/style.css" as="style">
     <link rel="stylesheet" href="./css/style.css">
+
+    <script>document.documentElement.classList.add('js')</script>
 </head>
 
 <body id="seguros">
@@ -40,7 +42,7 @@
 
         <div class="seguro container">
 
-            <div class="seguro-item">
+            <div class="seguro-item fadeInLeft" data-anime="200">
                 <h3 class="font-1-xl cor-6">PRATA</h3>
                 <span class="font-1-xl cor-0">R$ 199 <span class="font-1-xs cor-6">mensal</span></span>
                 <ul class="font-2-m cor-0">
@@ -51,7 +53,7 @@
                 </ul>
                 <a class="botao secundario" href="./orcamento.html?tipo=seguro&produto=prata">Increva-se</a>
             </div>
-            <div class="seguro-item">
+            <div class="seguro-item fadeInRight" data-anime="400">
                 <h3 class="font-1-xl cor-p1">OURO</h3>
                 <span class="font-1-xl cor-0">R$ 299 <span class="font-1-xs cor-6">mensal</span></span>
                 <ul class="font-2-m cor-0">
@@ -132,7 +134,7 @@
                 <dd id="pergunta5" class="font-2-s cor-9">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO e American Express. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
             </div>
             <div>
-                <dt><button class="font-1-m-b" aria-controls="pergunta6" aria-expanded="false">QUantas trocas posso fazer ao ano?</dt>
+                <dt><button class="font-1-m-b" aria-controls="pergunta6" aria-expanded="false">Quantas trocas posso fazer ao ano?</dt>
                 <dd id="pergunta6" class="font-2-s cor-9">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO e American Express. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</button></dd>
             </div>
             <div>
@@ -180,6 +182,7 @@
         </div>
     </footer>
 
+    <script src="./js/plugins/simple-anime.js"></script>
     <script src="./js/script.js"></script>
 </body>
 

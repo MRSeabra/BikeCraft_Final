@@ -6,6 +6,7 @@
 /* Utilidades */
 @import "./utilidades/componentes.css";
 @import "./utilidades/variables.css";
+@import "./utilidades/animacao.css";
 @import "./utilidades/formulario.css";
 
 /* Home */
