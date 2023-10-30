@@ -1,0 +1,4 @@
+*.php
+PHPMailer
+
+# Arquivo chamado ".gitinore" é feito para que o terminal ignore alguns tipos de arquivos a serem exportados e a ficarem somente na máquina, é uma forma de evidar que alguns arquivos de email e senha sejam vazados e hackeados. O comando "*.php" da instruções para que este tipo de arquivo seja ignorado pelo terminal. PHPMailer = um sistema de envio de emails
